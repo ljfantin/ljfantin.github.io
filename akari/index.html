@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akari: Guardian of Balance — OliDreamLab</title>
+<meta name="description" content="An isometric action adventure inspired by Japanese folklore. Surround what is corrupted with your magic trail and restore the forest's balance.">
+<meta property="og:title" content="Akari: Guardian of Balance">
+<meta property="og:description" content="Surround. Purify. Restore. An isometric action adventure inspired by Japanese folklore.">
+<meta property="og:image" content="https://ljfantin.github.io/akari/img/shot-01.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root{
+    --bg:#0f140f; --panel:#161d16; --fg:#ece6d8; --muted:#9aa394; --rule:#2a332a;
+    --accent:#8cf0c0; --accent-ink:#0f140f; --paper:#ede1c4; --paper-ink:#26351f;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f2e7; --panel:#fffdf7; --fg:#26351f; --muted:#6b7563; --rule:#e0d8c8;
+           --accent:#2f6b4f; --accent-ink:#ffffff; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:68rem;margin:0 auto;padding:0 16px}
+
+  header.top{display:flex;align-items:center;justify-content:space-between;
+             padding:1.1rem 0;border-bottom:1px solid var(--rule)}
+  header.top a.studio{color:var(--muted);text-decoration:none;font-weight:600;letter-spacing:.02em}
+  header.top a.studio:hover{color:var(--fg)}
+  header.top nav a{color:var(--muted);text-decoration:none;margin-left:1.2rem;font-size:.94rem}
+  header.top nav a:hover{color:var(--fg)}
+
+  .hero{display:grid;grid-template-columns:auto 1fr;gap:1.6rem;align-items:center;
+        padding:3.2rem 0 2.4rem}
+  .hero img.icon{width:120px;height:120px;border-radius:26px;display:block;
+                 box-shadow:0 8px 30px rgba(0,0,0,.35)}
+  .hero h1{font-size:2.5rem;line-height:1.1;margin:0 0 .35rem;letter-spacing:-.01em}
+  .hero .tag{color:var(--muted);font-size:1.12rem;margin:0}
+  .lede{font-size:1.14rem;max-width:44rem;margin:0 0 1.6rem}
+
+  .cta{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin:0 0 .6rem}
+  .btn{display:inline-block;padding:.72rem 1.25rem;border-radius:999px;font-weight:600;
+       text-decoration:none;font-size:.97rem;border:1px solid var(--rule);color:var(--fg)}
+  .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+  .btn.soon{opacity:.55;cursor:default}
+  .cta small{color:var(--muted);font-size:.88rem}
+
+  section{padding:2.6rem 0;border-top:1px solid var(--rule)}
+  h2{font-size:1.5rem;margin:0 0 1.2rem;letter-spacing:-.01em}
+
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem}
+  .shots img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid var(--rule)}
+
+  .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;
+         list-style:none;padding:0;margin:0}
+  .feats h3{font-size:1.02rem;margin:0 0 .3rem}
+  .feats p{margin:0;color:var(--muted);font-size:.97rem}
+
+  .quote{background:var(--panel);border:1px solid var(--rule);border-radius:14px;
+         padding:1.4rem 1.6rem;font-size:1.12rem;max-width:46rem}
+  .quote strong{display:block;margin-top:.5rem;color:var(--muted);font-weight:600;font-size:.95rem}
+
+  footer{border-top:1px solid var(--rule);padding:2rem 0 3rem;color:var(--muted);font-size:.93rem}
+  footer a{color:var(--muted)}
+  footer .row{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between}
+
+  @media (max-width:640px){
+    .hero{grid-template-columns:1fr;gap:1rem;padding:2.2rem 0 1.8rem;text-align:left}
+    .hero img.icon{width:92px;height:92px;border-radius:20px}
+    .hero h1{font-size:1.95rem}
+    header.top nav a{margin-left:.9rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="studio" href="/">OliDreamLab</a>
+    <nav>
+      <a href="#screens">Screenshots</a>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img class="icon" src="img/icon.png" alt="Akari: Guardian of Balance icon">
+    <div>
+      <h1>Akari: Guardian of Balance</h1>
+      <p class="tag">Purify the corrupted forest</p>
+    </div>
+  </div>
+
+  <p class="lede">A spirit has corrupted the forest. The trees are withering and the
+  creatures living in it attack anyone who comes close. Guide Akari and use her magic
+  trail to restore the forest's balance.</p>
+
+  <div class="cta">
+    <span class="btn primary soon">App Store — coming soon</span>
+    <span class="btn soon">Google Play — coming soon</span>
+  </div>
+  <p><small style="color:var(--muted)">Landscape · iPhone, iPad and Android · Free, with ads · 8 languages</small></p>
+</div>
+
+<section id="screens">
+  <div class="wrap">
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <img src="img/shot-01.jpg" alt="Akari surrounding a corrupted tree with her magic trail" loading="lazy">
+      <img src="img/shot-02.jpg" alt="An Oni in the forest" loading="lazy">
+      <img src="img/shot-03.jpg" alt="A Hebi water snake spitting venom" loading="lazy">
+      <img src="img/shot-04.jpg" alt="A Kitsune and its illusions" loading="lazy">
+      <img src="img/shot-05.jpg" alt="A spirit orb lighting up" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>Surround to purify</h2>
+    <p class="lede">Your path is your power. There is no sword and no shooting: move around
+    whatever you want to heal and close the circle with your magic trail. Everything caught
+    inside is purified. A still tree is easy — an enemy that chases you, clubs you or spits
+    venom is not.</p>
+
+    <ul class="feats">
+      <li>
+        <h3>Free the creatures</h3>
+        <p>The Oni swing their clubs and the Hebi, water snakes, spit venom. Purify them so
+        they recover their true nature and can leave in peace.</p>
+      </li>
+      <li>
+        <h3>Beware of the Kegare</h3>
+        <p>Impurity itself, walking. It corrupts again the trees and Oni you had already
+        healed — act before it undoes your work.</p>
+      </li>
+      <li>
+        <h3>Don't trust what you see</h3>
+        <p>The Kitsune create illusions to confuse you. Some trees and Oni are not what they
+        seem: purify them and they vanish.</p>
+      </li>
+      <li>
+        <h3>Beat your time</h3>
+        <p>No score, just the clock. Sharpen your movement, find more efficient routes and
+        finish each level in the shortest time possible.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="quote">
+      Surround. Purify. Restore.
+      <strong>The forest needs its guardian</strong>
+    </div>
+  </div>
+</section>
+
+<section id="support">
+  <div class="wrap">
+    <h2>Support</h2>
+    <p>Found a bug, got stuck on a level, or want to say something about the game? Write to
+    <a href="mailto:olidreamlab@gmail.com">olidreamlab@gmail.com</a> and you will get an
+    answer from the person who made it.</p>
+    <p>Privacy: <a href="privacy/">Akari privacy policy</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <span>Akari: Guardian of Balance © OliDreamLab</span>
+    <span><a href="/">OliDreamLab</a> · <a href="privacy/">Privacy</a> ·
+          <a href="mailto:olidreamlab@gmail.com">Contact</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

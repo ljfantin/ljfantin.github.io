@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>OliDreamLab</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OliDreamLab — indie mobile games</title>
+<meta name="description" content="OliDreamLab is a one-person game studio making handcrafted mobile games. First release: Akari, Guardian of Balance.">
+<meta property="og:title" content="OliDreamLab">
+<meta property="og:description" content="A one-person studio making handcrafted mobile games.">
+<meta property="og:image" content="https://ljfantin.github.io/akari/img/shot-01.jpg">
+<link rel="icon" href="akari/img/icon.png">
+<style>
+  :root{
+    --bg:#0f140f; --panel:#161d16; --fg:#ece6d8; --muted:#9aa394; --rule:#2a332a;
+    --accent:#8cf0c0;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f2e7; --panel:#fffdf7; --fg:#26351f; --muted:#6b7563; --rule:#e0d8c8;
+           --accent:#2f6b4f; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       -webkit-font-smoothing:antialiased;display:flex;flex-direction:column;min-height:100vh}
+  a{color:var(--accent)}
+  .wrap{max-width:60rem;margin:0 auto;padding:0 16px;width:100%}
+  main{flex:1}
+
+  .intro{padding:4.5rem 0 2.4rem}
+  .intro h1{font-size:2.6rem;margin:0 0 .5rem;letter-spacing:-.02em}
+  .intro p{font-size:1.15rem;color:var(--muted);max-width:38rem;margin:0}
+
+  h2{font-size:1.1rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+     margin:0 0 1.1rem;font-weight:600}
+
+  .games{display:grid;gap:1.2rem;padding-bottom:3rem}
+  .card{display:grid;grid-template-columns:96px 1fr;gap:1.2rem;align-items:center;
+        background:var(--panel);border:1px solid var(--rule);border-radius:16px;
+        padding:1.2rem;text-decoration:none;color:inherit;transition:border-color .15s}
+  .card:hover{border-color:var(--accent)}
+  .card img{width:96px;height:96px;border-radius:20px;display:block}
+  .card h3{margin:0 0 .25rem;font-size:1.25rem}
+  .card p{margin:0;color:var(--muted);font-size:.98rem}
+  .card .status{display:inline-block;margin-top:.5rem;font-size:.82rem;color:var(--muted);
+                border:1px solid var(--rule);border-radius:999px;padding:.12rem .6rem}
+
+  footer{border-top:1px solid var(--rule);padding:1.8rem 0 2.6rem;color:var(--muted);font-size:.93rem}
+  footer a{color:var(--muted)}
+
+  @media (max-width:560px){
+    .intro{padding:3rem 0 1.8rem}
+    .intro h1{font-size:2rem}
+    .card{grid-template-columns:72px 1fr;gap:1rem}
+    .card img{width:72px;height:72px;border-radius:16px}
+  }
+</style>
 </head>
 <body>
-  <h1>OliDreamLab</h1>
-  <p>Indie mobile game developer</p>
+
+<main>
+  <div class="wrap">
+    <div class="intro">
+      <h1>OliDreamLab</h1>
+      <p>A one-person studio making handcrafted mobile games — art, code and design under
+      the same roof.</p>
+    </div>
+
+    <h2>Games</h2>
+    <div class="games">
+      <a class="card" href="akari/">
+        <img src="akari/img/icon.png" alt="Akari: Guardian of Balance icon">
+        <div>
+          <h3>Akari: Guardian of Balance</h3>
+          <p>An isometric action adventure inspired by Japanese folklore. Surround what is
+          corrupted with your magic trail and restore the forest's balance.</p>
+          <span class="status">Coming soon to iOS and Android</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    © OliDreamLab · <a href="mailto:olidreamlab@gmail.com">olidreamlab@gmail.com</a>
+  </div>
+</footer>
+
 </body>
 </html>
